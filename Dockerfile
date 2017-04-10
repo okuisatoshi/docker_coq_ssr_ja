@@ -6,7 +6,7 @@ RUN opam install -y coq.8.6 coq-mathcomp-ssreflect.1.6.1 coq-mathcomp-algebra
 RUN mkdir /home/opam/.emacs.d
 COPY init.el /home/opam/.emacs.d/
 RUN sudo chown opam:opam /home/opam/.emacs.d/init.el
-
+ENV LANG ja.JP_UTF-8
 
 
 
