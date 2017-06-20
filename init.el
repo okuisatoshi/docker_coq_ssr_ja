@@ -3,6 +3,8 @@
 ;;(setq default-input-method "japanese-mozc")
 ;;(prefer-coding-system 'utf-8)
 
+(menu-bar-mode 0)
+
 (defadvice coq-mode-config
   (after deactivate-holes-mode () activate)
   (progn (holes-mode 0))
